@@ -14,17 +14,18 @@ class Card{
     private $suit;
 
     public function __construct($card){
-         $c =  substr($card, 0,1);
-         $s =  substr($card, 1,1);
+         $c =  substr($card, 0,1); // extract the card
+         $s =  substr($card, 1,1); // extract the suit
 
+        // Some validations to check if the given card  and suit are  within the range
         if(!$this->isValidCard($c))
-            throw new \Exception("Invalid Card [$c]");
+            throw new \Exception("Invalid Card");
 
         if(!$this->isValidSuit($s))
-            throw new \Exception("Invalid Suit [$s]");
+            throw new \Exception("Invalid Suit");
 
-        $this->setCard($c);
-        $this->setSuit($s);
+        $this->setCard($c); // set the card
+        $this->setSuit($s); // set the suit
     }
 
     public function isValidCard($card){
@@ -67,6 +68,7 @@ class Card{
            return false;
     }
 
+    // Retrieve the face value
     public function getFaceValue(){
 
         if(is_numeric($this->getCard())){
