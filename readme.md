@@ -1,4 +1,4 @@
-blackjack
+blackjack [![Build Status](https://travis-ci.org/webgig/blackjack.svg?branch=master)](https://travis-ci.org/webgig/blackjack)
 =========
 Instructions
 =========
