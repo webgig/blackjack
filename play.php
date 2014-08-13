@@ -12,9 +12,9 @@ if(isset($_POST)):
 
         // Some basic validations
         if(!$_POST['card1'])
-            throw new \Exception("Please provide value Card1");
+            throw new \Exception("Please provide value for Card1");
         else if(!$_POST['card2'])
-            throw new \Exception("Please provide value Card2");
+            throw new \Exception("Please provide value for Card2");
 
         $c  = new Card(trim($_POST['card1'])); // Card1
         $c1 = new Card(trim($_POST['card2'])); // Card2
