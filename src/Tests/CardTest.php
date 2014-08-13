@@ -11,9 +11,9 @@ class CardTest extends \PHPUnit_Framework_TestCase{
   public function setUp(){ }
   public function tearDown(){ }
 
-  public function testFormValid()
+  public function testResultValid()
   {
-    // test to ensure that the object from an fsockopen is valid
+    // test to ensure that the result is valid
     $c1 = new Card('2H');
     $c2 = new Card('AS');
 
