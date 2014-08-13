@@ -18,7 +18,7 @@ class Card{
          $s =  substr($card, 1,1);
 
         if(!$this->isValidCard($c))
-            throw new \Exception("Invalid Car [$c]");
+            throw new \Exception("Invalid Card [$c]");
 
         if(!$this->isValidSuit($s))
             throw new \Exception("Invalid Suit [$s]");
@@ -40,8 +40,6 @@ class Card{
         else
             return false;
     }
-
-
 
     public function setCard($card){
         if(isset($card))
